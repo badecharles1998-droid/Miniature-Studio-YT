@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre et Méta-descriptions -->
+    <title>Miniature Studio YT - Création de Miniatures YouTube Professionnelles</title>
+    <meta name="description" content="Boostez vos vues avec des miniatures YouTube percutantes et sur mesure. Miniature Studio YT, votre partenaire créatif pour un impact maximal.">
+    
+    <!-- Favicon (Logo dans l'onglet) -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Feuille de style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icônes (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">Miniature Studio <span>YT</span></a>
+            
+            <div class="menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active-link" data-lang-key="navHome">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link" data-lang-key="navServices">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-lang-key="navPortfolio">Portfolio</a></li>
+                    <li><a href="tarifs.html" class="nav-link" data-lang-key="navPricing">Tarifs</a></li>
+                    <li><a href="contact.html" class="nav-link" data-lang-key="navContact">Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+
+            <div class="nav-actions">
+                 <!-- Sélecteur de langue -->
+                <div class="lang-switcher">
+                    <span id="lang-fr" class="lang-option active">FR</span>
+                    <span>/</span>
+                    <span id="lang-en" class="lang-option">EN</span>
+                </div>
+                <a href="commande.html" class="btn btn-primary" data-lang-key="navOrder">Commander</a>
+                 <!-- Bouton menu mobile -->
+                <div class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== SECTION HERO ==================== -->
+        <section id="hero" class="section">
+            <div class="container grid">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-lang-key="heroTitle">Des Miniatures YouTube Qui Captivent Votre Audience</h1>
+                    <p class="hero-description" data-lang-key="heroSubtitle">Transformez vos vues en abonnés fidèles avec des designs percutants et professionnels. Votre succès commence par un clic.</p>
+                    <div class="hero-buttons">
+                        <a href="portfolio.html" class="btn btn-primary" data-lang-key="heroBtnPortfolio">Voir nos créations</a>
+                        <a href="tarifs.html" class="btn btn-secondary" data-lang-key="heroBtnPricing">Découvrir les tarifs</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Image de fond stylisée avec des miniatures en exemple -->
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop" alt="Exemples de miniatures YouTube attrayantes">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION SERVICES ==================== -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="servicesTitle">Nos Services de Création</h2>
+                <p class="section-subtitle" data-lang-key="servicesSubtitle">Des solutions sur mesure pour chaque créateur de contenu.</p>
+                <div class="services-grid grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+                        <h3 class="service-title" data-lang-key="service1Title">Pack "Impact Rapide"</h3>
+                        <p class="service-description" data-lang-key="service1Desc">Idéal pour les créateurs qui ont besoin de miniatures de haute qualité rapidement. Un design percutant pour un maximum de clics.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <i class="fa-solid fa-layer-group service-icon"></i>
+                        <h3 class="service-title" data-lang-key="service2Title">Abonnement "Créateur Pro"</h3>
+                        <p class="service-description" data-lang-key="service2Desc">Recevez un nombre défini de miniatures chaque mois. Gardez une cohérence visuelle et gagnez du temps pour vous concentrer sur vos vidéos.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <i class="fa-solid fa-gem service-icon"></i>
+                        <h3 class="service-title" data-lang-key="service3Title">Offre "Luxe & Sur-Mesure"</h3>
+                        <p class="service-description" data-lang-key="service3Desc">Une collaboration étroite pour définir une identité visuelle unique. Parfait pour les marques et les projets d'envergure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION PORTFOLIO (GALERIE) ==================== -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="portfolioTitle">Notre Galerie de Créations</h2>
+                <p class="section-subtitle" data-lang-key="portfolioSubtitle">Des images qui parlent d'elles-mêmes.</p>
+                <div class="portfolio-grid grid">
+                    <div class="portfolio-item"><img src="https://placehold.co/600x400/E10600/FFFFFF?text=Miniature+1" alt="Exemple de miniature 1"></div>
+                    <div class="portfolio-item"><img src="https://placehold.co/600x400/FFD500/121212?text=Miniature+2" alt="Exemple de miniature 2"></div>
+                    <div class="portfolio-item"><img src="https://placehold.co/600x400/121212/F5F5F5?text=Miniature+3" alt="Exemple de miniature 3"></div>
+                    <div class="portfolio-item"><img src="https://placehold.co/600x400/E10600/FFFFFF?text=Miniature+4" alt="Exemple de miniature 4"></div>
+                </div>
+                 <div class="section-cta">
+                    <a href="portfolio.html" class="btn btn-secondary" data-lang-key="portfolioBtn">Explorer le portfolio complet</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION TÉMOIGNAGES ==================== -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="testimonialsTitle">Ce que disent nos clients</h2>
+                <div class="testimonials-grid grid">
+                    <!-- Témoignage 1 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-lang-key="testimonial1Text">"Le taux de clics sur mes vidéos a augmenté de 30% depuis que je travaille avec Miniature Studio YT. Incroyable !"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo de Jean Dupont">
+                            <div>
+                                <h4 class="author-name">Jean Dupont</h4>
+                                <span class="author-role" data-lang-key="testimonial1Role">Youtuber Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Témoignage 2 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-lang-key="testimonial2Text">"Un service rapide, professionnel et à l'écoute. Ils ont parfaitement compris l'identité de ma chaîne."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Photo de Marie Curie">
+                            <div>
+                                <h4 class="author-name">Maria Garcia</h4>
+                                <span class="author-role" data-lang-key="testimonial2Role">Créatrice Lifestyle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION CTA (APPEL À L'ACTION) ==================== -->
+        <section id="cta" class="section">
+            <div class="container cta-container">
+                <h2 class="cta-title" data-lang-key="ctaTitle">Prêt à faire décoller votre chaîne ?</h2>
+                <p class="cta-description" data-lang-key="ctaDesc">Ne laissez pas vos vidéos se perdre dans la masse. Donnez-leur l'impact visuel qu'elles méritent.</p>
+                <a href="commande.html" class="btn btn-primary btn-lg" data-lang-key="ctaBtn">Commander ma miniature</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer" class="section">
+        <div class="container grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Miniature Studio <span>YT</span></a>
+                <p data-lang-key="footerSlogan">Créativité. Impact. Succès.</p>
+                <div class="footer-socials">
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-lang-key="footerNav">Navigation</h4>
+                <ul>
+                    <li><a href="a-propos.html" data-lang-key="navAbout">À Propos</a></li>
+                    <li><a href="faq.html" data-lang-key="navFaq">FAQ</a></li>
+                    <li><a href="contact.html" data-lang-key="navContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-lang-key="footerServices">Services</h4>
+                <ul>
+                    <li><a href="services.html" data-lang-key="footerService1">Impact Rapide</a></li>
+                    <li><a href="services.html" data-lang-key="footerService2">Créateur Pro</a></li>
+                    <li><a href="services.html" data-lang-key="footerService3">Luxe & Sur-Mesure</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-lang-key="footerContact">Contactez-nous</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:contact@miniaturestudioyt.com">contact@miniaturestudioyt.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Miniature Studio YT. <span data-lang-key="footerRights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPT JS ==================== -->
+    <script src="script.js"></script>
+</body>
+</html>
