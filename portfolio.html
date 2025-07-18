@@ -7,6 +7,10 @@
     <meta name="description" content="Explorez notre galerie de miniatures YouTube. Découvrez notre style et la qualité de notre travail à travers nos meilleures créations.">
     
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,28 +49,42 @@
             </div>
         </section>
 
-        <!-- ==================== GALERIE COMPLÈTE ==================== -->
+        <!-- ==================== CARROUSEL PORTFOLIO ==================== -->
         <section id="full-portfolio" class="section">
             <div class="container">
-                <!-- Filtres (optionnel, pour une future amélioration) -->
-                <div class="portfolio-filters">
-                    <span class="filter-item active" data-filter="all">Tout</span>
-                    <span class="filter-item" data-filter="gaming">Gaming</span>
-                    <span class="filter-item" data-filter="tech">Tech</span>
-                    <span class="filter-item" data-filter="lifestyle">Lifestyle</span>
-                    <span class="filter-item" data-filter="business">Business</span>
-                </div>
-
-                <div class="full-portfolio-grid grid">
-                    <!-- Répéter ce bloc pour chaque image -->
-                    <div class="portfolio-item" data-category="tech"><img src="https://placehold.co/600x400/E10600/FFFFFF?text=Tech+Review" alt="Miniature Tech"></div>
-                    <div class="portfolio-item" data-category="gaming"><img src="https://placehold.co/600x400/FFD500/121212?text=Epic+Gaming" alt="Miniature Gaming"></div>
-                    <div class="portfolio-item" data-category="lifestyle"><img src="https://placehold.co/600x400/121212/F5F5F5?text=Lifestyle+Vlog" alt="Miniature Lifestyle"></div>
-                    <div class="portfolio-item" data-category="business"><img src="https://placehold.co/600x400/E10600/FFFFFF?text=Business+Tips" alt="Miniature Business"></div>
-                    <div class="portfolio-item" data-category="gaming"><img src="https://placehold.co/600x400/FFD500/121212?text=New+Game" alt="Miniature Gaming 2"></div>
-                    <div class="portfolio-item" data-category="tech"><img src="https://placehold.co/600x400/121212/F5F5F5?text=Unboxing" alt="Miniature Tech 2"></div>
-                    <div class="portfolio-item" data-category="lifestyle"><img src="https://placehold.co/600x400/E10600/FFFFFF?text=Travel+Diary" alt="Miniature Lifestyle 2"></div>
-                    <div class="portfolio-item" data-category="business"><img src="https://placehold.co/600x400/FFD500/121212?text=Market+Analysis" alt="Miniature Business 2"></div>
+                <!-- Swiper -->
+                <div class="swiper portfolio-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/800x450/E10600/FFFFFF?text=Tech+Review" alt="Miniature Tech">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/800x450/FFD500/121212?text=Epic+Gaming" alt="Miniature Gaming">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/800x450/121212/F5F5F5?text=Lifestyle+Vlog" alt="Miniature Lifestyle">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/800x450/E10600/FFFFFF?text=Business+Tips" alt="Miniature Business">
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/800x450/FFD500/121212?text=New+Game" alt="Miniature Gaming 2">
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/800x450/121212/F5F5F5?text=Unboxing" alt="Miniature Tech 2">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </section>
@@ -82,6 +100,9 @@
         </div>
         <div class="footer-bottom"><div class="container"><p>&copy; 2024 Miniature Studio YT. <span data-lang-key="footerRights">Tous droits réservés.</span></p></div></div>
     </footer>
+    
+    <!-- SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
