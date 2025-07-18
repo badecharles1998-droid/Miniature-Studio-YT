@@ -1,3 +1,185 @@
+/* ==================== PAGE SERVICES (NOUVEAU DESIGN) ==================== */
+.services-page-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    align-items: stretch; /* Assure que les cartes ont la même hauteur */
+}
+
+.service-page-card {
+    background-color: var(--color-dark-variant);
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-page-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+}
+
+.service-page-card.featured {
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+}
+.service-page-card.featured:hover {
+     transform: scale(1.08);
+}
+
+
+.service-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card-header i {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.service-card-header h2 {
+    font-size: 1.4rem;
+}
+
+.service-card-desc {
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+    flex-grow: 1; /* Pousse le bouton vers le bas */
+}
+
+.service-card-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.service-card-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.service-card-features li i {
+    color: var(--color-secondary);
+}
+
+
+/* ==================== PAGE TARIFS (NOUVEAU DESIGN) ==================== */
+.pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: stretch;
+}
+
+.pricing-card {
+    background-color: var(--color-dark-variant);
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card.popular {
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+    z-index: 10;
+}
+.pricing-card.popular:hover {
+    transform: scale(1.08);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: -45px;
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    padding: 0.3rem 3rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+    font-size: 0.9rem;
+}
+
+.pricing-card-header {
+    margin-bottom: 2rem;
+}
+
+.pricing-card-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card-header p {
+    color: var(--color-gray);
+}
+
+.pricing-card-price {
+    margin-bottom: 2rem;
+}
+
+.pricing-card-price .price {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+.pricing-card-price .price-custom {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.pricing-card-price .per {
+    color: var(--color-gray);
+}
+
+.pricing-card-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.pricing-card-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-card-features li i {
+    color: var(--color-secondary);
+}
+
+.pricing-card-features li.disabled {
+    color: var(--color-gray);
+    text-decoration: line-through;
+}
+
+.pricing-card-features li.disabled i {
+    color: #555;
+}
+
+.pricing-card-cta {
+    margin-top: auto; /* Pousse le bouton en bas */
+}
+
+.pricing-card-cta .btn {
+    width: 100%;
+}
 /* ==================== GOOGLE FONTS ==================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
 
