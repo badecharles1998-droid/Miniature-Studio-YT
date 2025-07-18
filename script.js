@@ -187,3 +187,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ... (le reste du code JS existant comme le système de langue) ...
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (tout le code JS existant : menu, scroll, langue, faq...) ...
+
+    /* ==================== INITIALISATION SWIPERJS ==================== */
+    
+    // Carrousel pour la page portfolio complète
+    const portfolioSwiper = new Swiper('.portfolio-swiper', {
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        
+        // Navigation
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // Carrousel pour l'aperçu sur la page d'accueil
+    const portfolioPreviewSwiper = new Swiper('.portfolio-preview-swiper', {
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        effect: 'coverflow',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
+});
