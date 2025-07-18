@@ -1,3 +1,62 @@
+/* ==================== SECTION COMMANDE SUR MESURE ==================== */
+#custom-order {
+    padding-top: 0; /* Pour réduire l'espace avec la section tarifs */
+}
+
+.custom-order-container {
+    max-width: 800px;
+    text-align: center;
+    background: var(--color-dark-variant);
+    padding: 4rem 3rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #333;
+    box-shadow: var(--shadow);
+}
+
+.custom-order-container h2 {
+    font-size: var(--h2-size);
+    margin-bottom: 1rem;
+}
+
+.custom-order-container .section-subtitle {
+    margin-bottom: 2.5rem;
+}
+
+.custom-order-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.custom-order-form input[type="number"] {
+    width: 150px;
+    padding: 0.9rem 1rem;
+    border-radius: var(--border-radius);
+    border: 2px solid #444;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.custom-order-form input[type="number"]:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* Ajustement de la grille de prix pour 4 éléments */
+@media screen and (min-width: 1400px) {
+    .pricing-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .pricing-card.popular {
+        transform: scale(1.05); /* Maintenir la mise en avant */
+    }
+}
 /* ==================== PAGE SERVICES (NOUVEAU DESIGN) ==================== */
 .services-page-grid {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));

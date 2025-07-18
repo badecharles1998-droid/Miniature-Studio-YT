@@ -91,7 +91,28 @@
                     </div>
                 </div>
 
-                <!-- Plan 3: Luxe & Sur-Mesure -->
+                <!-- Plan 3: Booster Pack -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 data-lang-key="boosterTitle">Pack Booster</h3>
+                        <p data-lang-key="boosterDesc">Pour accélérer la production</p>
+                    </div>
+                    <div class="pricing-card-price">
+                        <span class="price">155€</span>
+                        <span class="per" data-lang-key="perMonth">/ mois</span>
+                    </div>
+                    <ul class="pricing-card-features">
+                        <li data-lang-key="boosterFeat1"><i class="fa-solid fa-check"></i> 7 Miniatures / mois</li>
+                        <li data-lang-key="boosterFeat2"><i class="fa-solid fa-check"></i> Cohérence Visuelle</li>
+                        <li data-lang-key="boosterFeat3"><i class="fa-solid fa-check"></i> 2 Sessions de retouches / minia</li>
+                        <li data-lang-key="boosterFeat4"><i class="fa-solid fa-check"></i> Support Prioritaire</li>
+                    </ul>
+                     <div class="pricing-card-cta">
+                        <a href="commande.html" class="btn btn-secondary" data-lang-key="choosePlan">Choisir ce plan</a>
+                    </div>
+                </div>
+
+                <!-- Plan 4: Luxe & Sur-Mesure -->
                 <div class="pricing-card">
                     <div class="pricing-card-header">
                         <h3 data-lang-key="service3Title">Luxe & Sur-Mesure</h3>
@@ -101,7 +122,7 @@
                         <span class="price-custom" data-lang-key="onQuote">Sur Devis</span>
                     </div>
                     <ul class="pricing-card-features">
-                        <li data-lang-key="pricingFeat9"><i class="fa-solid fa-check"></i> Tout du plan Pro</li>
+                        <li data-lang-key="pricingFeat9"><i class="fa-solid fa-check"></i> Tout des plans Pro</li>
                         <li data-lang-key="pricingFeat10"><i class="fa-solid fa-check"></i> Direction Artistique</li>
                         <li data-lang-key="pricingFeat11"><i class="fa-solid fa-check"></i> A/B Testing</li>
                         <li data-lang-key="pricingFeat12"><i class="fa-solid fa-check"></i> Accompagnement Stratégique</li>
@@ -110,6 +131,18 @@
                         <a href="contact.html" class="btn btn-secondary" data-lang-key="contactUs">Nous Contacter</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION COMMANDE SUR MESURE ==================== -->
+        <section id="custom-order" class="section">
+            <div class="container custom-order-container">
+                <h2 data-lang-key="customOrderTitle">Besoin de plus ?</h2>
+                <p class="section-subtitle" data-lang-key="customOrderDesc">Indiquez le nombre de miniatures dont vous avez besoin et nous vous enverrons un devis personnalisé.</p>
+                <form action="contact.html" method="GET" class="custom-order-form">
+                    <input type="number" min="1" value="10" name="custom_quantity" aria-label="Nombre de miniatures">
+                    <button type="submit" class="btn btn-primary" data-lang-key="customOrderBtn">Obtenir mon devis</button>
+                </form>
             </div>
         </section>
     </main>

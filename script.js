@@ -42,7 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
             footerService3: "Luxe & Sur-Mesure",
             footerContact: "Contactez-nous",
             footerRights: "Tous droits réservés."
-        },
+        },   boosterTitle: "Pack Booster",
+    boosterDesc: "Pour accélérer la production",
+    boosterFeat1: "7 Miniatures / mois",
+    boosterFeat2: "Cohérence Visuelle",
+    boosterFeat3: "2 Sessions de retouches / minia",
+    boosterFeat4: "Support Prioritaire",
+    customOrderTitle: "Besoin de plus ?",
+    customOrderDesc: "Indiquez le nombre de miniatures dont vous avez besoin et nous vous enverrons un devis personnalisé.",
+    customOrderBtn: "Obtenir mon devis"
         en: {
             navHome: "Home",
             navServices: "Services",
@@ -83,7 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
             footerService3: "Luxury & Custom",
             footerContact: "Contact Us",
             footerRights: "All rights reserved."
-        }
+        }    boosterTitle: "Booster Pack",
+    boosterDesc: "To speed up production",
+    boosterFeat1: "7 Thumbnails / month",
+    boosterFeat2: "Visual Consistency",
+    boosterFeat3: "2 Revision sessions / thumb",
+    boosterFeat4: "Priority Support",
+    customOrderTitle: "Need More?",
+    customOrderDesc: "Enter the number of thumbnails you need, and we'll send you a custom quote.",
+    customOrderBtn: "Get My Quote"
     };
 
     /* ==================== MENU MOBILE ==================== */
